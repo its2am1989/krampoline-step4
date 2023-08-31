@@ -32,7 +32,7 @@ spec:
             - mountPath: /var/lib/mysql
               name: data
               subPath: mysql
-            - mountPath: /docker-entrypoint-initdb.d
+            - mountPath: /docker-entrypoint-initdb.d #최초로 한번 실행됨. 근데 statefulset이라
               name: init-db
           resources:
             limits:
